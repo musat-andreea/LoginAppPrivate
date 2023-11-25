@@ -10,6 +10,12 @@ export class User extends BaseEntity{
     email: string;
 
     @Column()
+    name: string;
+
+    @Column()
+    location: string;
+
+    @Column()
     password: string;
 
     @Column()
@@ -22,6 +28,6 @@ export class User extends BaseEntity{
     }
 
     async validatePassword(password: string): Promise<boolean> {
-        return bcrypt.compare(password, this.password);
+        return await bcrypt.compare(password, this.password);
     }
 }
