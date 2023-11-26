@@ -32,7 +32,7 @@
 $ npm install
 ```
 
-## Running the app
+## Running the app without Docker
 
 ```bash
 # development
@@ -44,6 +44,13 @@ $ npm run start:dev
 # production mode
 $ npm run start:prod
 ```
+
+## Running the app with Docker
+```bash
+# development
+$ docker-compose up
+```
+
 
 ## Test
 
